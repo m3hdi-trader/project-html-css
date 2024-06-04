@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+===================
+Fonts
+===================
+*/
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff2"),
+      url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"),
+      url("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype");
+  }
+/*
+===================
+variabales
+===================
+*/
+:root{
+  --clr-primary:#e2711d;
+  --clr-primary-light:#ffb627;
+  --clr-grey-1:#102a42;
+  --clr-grey-5:#617d98;
+  --clr-grey-10:#f1f5f8;
+  --clr-white:#fff;
+  --ff-primary:"vazir",sens-serif;
+
+}
+
+body{
+  font-family: var(--ff-primary);
+  background-color: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  text-align: right;
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
