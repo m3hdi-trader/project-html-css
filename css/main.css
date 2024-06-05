@@ -12,8 +12,8 @@ Fonts
 @font-face {
     font-family: "vazir";
     src: url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff2"),
-      url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"),
-      url("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype");
+      url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff"),
+      url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype");
   }
 /*
 ===================
@@ -45,6 +45,13 @@ body{
 a{
   text-decoration: none;
 }
+
+img{
+  display: block;
+  width: 100%;
+
+}
+
 h1{
   font-size: 1.75rem;
 }
@@ -77,18 +84,42 @@ h4{
   border-radius: var(--radius);
   color: var(--clr-white);
   transition: var(--transition);
+  display: inline-block;
 }
 
 .btn:hover{
   background: var(--clr-primary-light);
   color: var(--clr-primary);
 }
-
 .clearFix::after , .clearFix::before{
   content: "";
   clear: both;
   display: block;
 } 
+
+.section-center{
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and(min-width:992px){
+  .section-center{
+    width: 95vw;
+  }
+
+  
+}
+
+.section-title h3{
+  color: var(--clr-primary);
+}
+.section-title{
+  margin-bottom: 2rem;
+}
+
+
 
 /*
 ===================
@@ -128,6 +159,7 @@ outline: 0.125rem solid var(--clr-primary);
 outline-offset: 0.25rem;
 padding: 0.75rem 1.5rem;
 }
+
 
 /*
 ===================
@@ -201,6 +233,54 @@ Features
   }
   
 }
+
+/*
+===================
+About
+===================
+*/
+
+.about-img, .about-info{
+  padding:2rem 0;
+}
+
+.about-img-container{
+  background: var(--clr-primary-light);
+  max-width: 30rem;
+  border: 0.3rem solid var(--clr-primary);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.about-picture{
+  transform: var(--transition);
+}
+
+.about-img-container:hover .about-picture{
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text{
+  color: var(--clr-grey-5);
+}
+
+.about-btn{
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width:992px){
+  .about-img{
+    float: left;
+    width: 50%;
+  }
+
+  .about-info{
+    float: right;
+    width: 50%;
+  }
+}
+
 
 
 
